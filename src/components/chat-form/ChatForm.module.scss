@@ -1,0 +1,33 @@
+@use 'sass:map';
+@use '@/styles/variables' as *;
+
+.container {
+  padding: 0.5rem;
+  border-top: 1px solid #ccc;
+  display: flex;
+  gap: 0.5rem;
+  border: 1px solid #ddd;
+  border-radius: map.get($radius, md);
+  display: flex;
+  gap: 0.5rem;
+
+  &.error {
+    border-color: $red;
+  }
+
+  input {
+    border: none;
+    flex: 1;
+    outline: none;
+    font-size: 1rem;
+  }
+
+  button {
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+    cursor: pointer;
+    border: 1px solid #ccc;
+    background-color: white;
+    border-radius: map.get($radius, md);
+  }
+}

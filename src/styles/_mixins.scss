@@ -1,0 +1,13 @@
+@use 'variables' as *;
+
+@mixin link() {
+  color: $primary;
+
+  &:hover {
+    text-decoration: underline;
+  }
+
+  &.active {
+    text-decoration: underline;
+  }
+}

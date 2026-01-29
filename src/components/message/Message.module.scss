@@ -1,0 +1,41 @@
+@use 'sass:map';
+@use '@/styles/variables' as *;
+
+.container {
+  padding: 0.5rem 1.5rem;
+  border-radius: map.get($radius, md);
+  width: fit-content;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  min-width: 0;
+  max-width: 70ch;
+
+  p {
+    font-size: 1.25rem;
+
+    white-space: pre-wrap;
+    overflow-wrap: anywhere;
+    word-break: normal;
+  }
+}
+
+.right {
+  align-self: flex-end;
+  text-align: right;
+  background-color: #636363;
+}
+
+.left {
+  align-self: flex-start;
+  text-align: left;
+  background-color: $primary;
+}
+
+.timestamp {
+  font-size: 0.75rem;
+  opacity: 0.75;
+  margin-top: 0.25rem;
+  align-self: flex-end;
+}
